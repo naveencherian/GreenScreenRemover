@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # Load the image
-image = cv2.imread(r"C:\Users\Tnluser.PG038JDB\Downloads\test.jpg")
+image = cv2.imread(r"enter full file path here")
 
 # Define the green screen color range (adjust these values as needed)
 lower_green = np.array([0, 100, 0])
@@ -18,4 +18,4 @@ mask = cv2.bitwise_not(mask)
 result = cv2.bitwise_and(image, image, mask=mask)
 
 # Save the result
-cv2.imwrite(r"C:\Users\Tnluser.PG038JDB\Downloads\testnew.jpg", result)
+cv2.imwrite(r"enter full file path here", result)
